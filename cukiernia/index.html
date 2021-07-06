@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cukiernia</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/fontello.css">
+	<script type="text/javascript" src="funkcje.js"></script>
+</head>
+<body>
+
+<nav>
+	<ul>
+		<li>Strona główna</li>
+		<li>O nas</li>
+		<li>produkty</li>
+		<li>aktualności</li>
+		<li>kontakt</li>
+	</ul>
+</nav>
+<div id="pudelko">
+	<header>
+		<h1><span>Cukiernia w Elblągu</span></h1>
+		<h2>ul. Pułkownika Dąbka 152</h2>
+		<h3><i class="icon-phone"></i>+48125874 <i class="icon-mail"></i>cukiernia@poczta.com</h3>
+
+
+	</header>
+
+	<aside>
+		<h2>Godziny otwarcia</h2>
+		<table>
+			<tr>
+				<td>poniedziałek</td>
+				<td>9:00 - 21:00</td>
+			</tr>
+			<tr>
+				<td>wtorek</td>
+				<td>9:00 - 21:00</td>
+			<tr>
+				<td>środa</td>
+				<td>9:00 - 21:00</td>
+			</tr>
+			<tr>
+				<td>czwartek</td>
+				<td>9:00 - 21:00</td>
+			</tr>
+			<tr>
+				<td>piatek</td>
+				<td>9:00 - 21:00</td>
+			</tr>
+			<tr>
+				<td>sobota</td>
+				<td>9:00 - 21:00</td>
+			</tr>
+			<tr>
+				<td>niedziela</td>
+				<td>9:00 - 21:00</td>
+			</tr>
+			<tr>
+				<td>niedziela*</td>
+				<td>nieczynne</td>
+			</tr>
+			
+		</table>
+<h3>*niedziela niehandlowa</h3>
+
+	</aside>
+	<main>
+	<h2>Złóż zamówienie</h2>
+	<table>
+		<tr>
+			<th>Nazwa produktu</th>
+			<th>cena</th>
+			<th>ilość</th>
+			<th>zamów</th>
+		</tr>
+		<tr>
+			<td>pączki</td>
+			<td>9 zł</td>
+			<td><input type="number" id="paczek"></td>
+			<td><input type="checkbox" id="paczek_ch"></td>
+		</tr>
+		<tr>
+			<td>torty</td>
+			<td>50 zł</td>
+			<td><input type="number" id="tort"></td>
+			<td><input type="checkbox" id="tort_ch"></td>
+		</tr>
+		<tr>
+			<td>ciasto</td>
+			<td>30 zł</td>
+			<td><input type="number" id="ciasto"></td>
+			<td><input type="checkbox" id="ciasto_ch"></td>
+		</tr>
+		<tr>
+			<td>praliny</td>
+			<td>15 zł</td>
+			<td><input type="number" id="praliny"></td>
+			<td><input type="checkbox" id="praliny_ch"></td>
+		</tr>
+
+	</table>
+	<input type="submit" value="Zamów" onclick="zamowienie()">
+
+	<div id="wypisz"></div>
+
+</main>
+
+	<div id="zdjecia">
+		<div class="ciasta">
+			<img src="zdjecia/ciasto_deser.jpg">
+			<p class="napis">Ciasta deserowe</p>
+
+		</div>
+		<div class="ciasta">
+			<img src="zdjecia/ciasto_pieczone.jpg">
+			<p class="napis">Ciasta pieczone</p>
+
+		</div>
+		<div class="ciasta">
+			<img src="zdjecia/tort.jpg">
+			<p class="napis">Torty</p>
+
+		</div>
+		<div class="ciasta">
+			<img src="zdjecia/prqaliny.jpg">
+			<p class="napis">Praliny</p>
+
+		</div>
+
+		
+	</div>
+</div>
+</body>
+</html>
